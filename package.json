@@ -1,0 +1,17 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dev/index.js",
+  "scripts": {
+    "start": "tsc && node dev/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-serve-static-core": "^4.17.7",
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*"
+  }
+}
