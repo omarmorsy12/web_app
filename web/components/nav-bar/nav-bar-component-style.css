@@ -1,0 +1,64 @@
+.navbar {
+    background: var(--primary);
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+.navbar .title {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.navbar .title .p1 {
+    font-size: 40px;
+    color: white;
+}
+
+.navbar .title .p2 {
+    font-size: 50px;
+}
+
+.navbar .title .p3 {
+    font-size: 25px;
+    margin-top: auto;
+}
+
+.navbar .title .p3, .navbar .title .p2 {
+    color: var(--secondary);
+    font-weight: normal;
+}
+
+.navbar .anchors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    justify-content: right;
+    margin-bottom: 8px;
+}
+
+.navbar .anchors a {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(216, 216, 216);
+    border-radius: 20px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.navbar .anchors a svg {
+    margin-right: 8px;
+}
+
+.navbar .anchors a.selected {
+    background: var(--selected);
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .anchors a:not(.selected):hover {
+    cursor: pointer;
+    background: var(--hover);
+    color: white;
+}

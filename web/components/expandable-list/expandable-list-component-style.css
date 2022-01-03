@@ -1,0 +1,60 @@
+expandable-list-item, expandable-list {
+    display: block;
+}
+
+expandable-list-item {
+    position: relative;
+}
+
+expandable-list-item:not(.show-content) > *:not(.item-header) {
+    display: none;
+}
+
+expandable-list-item:not(.item-no-padding) .item-header {
+    padding: 8px 16px;
+}
+
+expandable-list-item > *:not(.item-header) {
+    padding: 8px 16px;
+}
+
+expandable-list-item .item-header.default {
+    cursor: pointer;
+}
+
+expandable-list-item:not(.show-content) .item-header.default:hover {
+    color: white;
+    background: var(--hover);
+}
+
+expandable-list-item.show-content .item-header.default {
+    color: white;
+    background: var(--selected);
+}
+
+expandable-list-item:not(:first-of-type) {
+    border-top: 1px solid var(--grey);
+}
+expandable-list-item:first-of-type {
+    margin-top: -0.5px;
+}
+
+expandable-list {
+    border: 1px solid var(--grey);
+    width: 100%;
+    height: fit-content;
+}
+
+expandable-list-item .fa-caret-right, expandable-list-item .fa-caret-down {
+    display: none;
+    margin-right: 8px;
+    width: 10px;
+}
+
+expandable-list-item:not(.show-content) .item-header.default .fa-caret-right {
+    display: unset;
+}
+
+expandable-list-item.show-content .item-header.default .fa-caret-down {
+    display: unset;
+}

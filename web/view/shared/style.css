@@ -1,0 +1,33 @@
+:root {
+    --primary: #1d75ceea;
+    --secondary: #5aff94;
+    --selected: #0b539c;
+    --hover: #1daafc;
+    --grey: #999999;
+    --black: #161616;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: var(--black);
+}
+
+app-body:not(.ready), *[sync-with-render]:not(.ready) {
+    display: none;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 80px);
+    place-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.container.top {
+    align-items: unset;
+}
